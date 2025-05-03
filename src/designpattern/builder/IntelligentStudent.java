@@ -1,6 +1,6 @@
-package designpattern.prototype;
+package designpattern.builder;
 
-public class IntelligentStudent extends Student{
+public class IntelligentStudent extends Student {
     private int iq;
     public IntelligentStudent(IntelligentStudent is){
         super(is);

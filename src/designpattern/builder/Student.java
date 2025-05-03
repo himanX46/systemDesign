@@ -1,4 +1,4 @@
-package designpattern.prototype;
+package designpattern.builder;
 
 import lombok.Getter;
 import lombok.Setter;
