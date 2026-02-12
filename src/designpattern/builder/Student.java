@@ -1,24 +1,44 @@
 package designpattern.builder;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class Student {
-    String name;
-    String addess;
-    int rollNo;
+    private String studentName;
+    private int age;
+    private String phone;
+    private String address;
 
-    public Student(Student other){
-        this.name = other.name;
-        this.addess = other.addess;
-        this.rollNo = other.rollNo;
+    private Student(Builder builder){
+        this.studentName = builder.studentName;
+        this.age = builder.age;
+        this.phone = builder.phone;
+        this.address = builder.address;
     }
 
-    public Student(){}
+    public static class Builder{
+        private String studentName;
+        private int age;
+        private String phone;
+        private String address;
 
-    public Student copy(){
-        return new Student(this);
+        public Builder(String name){
+            this.studentName = name;
+        }
+        public Builder age(int age){
+            this.age = age;
+            return this;
+        }
+
+        public Builder phone(String phone){
+            this.phone = phone;
+            return this;
+        }
+
+        public Builder address(String address){
+            this.address = address;
+            return this;
+        }
+
+        public Student build(){
+            return new Student(this);
+        }
     }
 }
