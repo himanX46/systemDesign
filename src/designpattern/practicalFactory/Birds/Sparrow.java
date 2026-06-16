@@ -1,4 +1,4 @@
-package designpattern.practicalFactory.Birds;
+package designpattern.observerPattern.observable.practicalFactory.Birds;
 
 public class Sparrow extends Bird{
 }

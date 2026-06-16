@@ -1,8 +1,8 @@
-package designpattern.practicalFactory;
+package designpattern.observerPattern.observable.practicalFactory;
 
-import designpattern.practicalFactory.Birds.Bird;
-import designpattern.practicalFactory.Birds.BirdFactory;
-import designpattern.practicalFactory.Birds.BirdType;
+import designpattern.observerPattern.observable.practicalFactory.Birds.Bird;
+import designpattern.observerPattern.observable.practicalFactory.Birds.BirdFactory;
+import designpattern.observerPattern.observable.practicalFactory.Birds.BirdType;
 
 public class Client {
     public static void main(String[] args) {
